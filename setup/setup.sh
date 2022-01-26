@@ -14,8 +14,7 @@ sha256sum -c < sums
 cd /dos/drive_g/v2
 
 unzip /tmp/setup/ViSiON2-RES.ZIP
-rm /tmp/setup/unofficial.rgbbsfullv120a.zip
-
+rm /tmp/setup/ViSiON2-RES.ZIP
 cd v2
 
 mkdir NODE1
