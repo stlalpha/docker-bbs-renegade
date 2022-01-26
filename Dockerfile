@@ -1,7 +1,6 @@
 FROM jgoerzen/dos-bbs
 
-MAINTAINER John Goerzen <jgoerzen@complete.org>
-
+LABEL MAINTAINER="stlalpha@icloud.net"
 COPY setup/ /tmp/setup/
 RUN /tmp/setup/setup.sh && rm -r /tmp/setup
 COPY nodeprephook.sh /dos/nodeprephook.sh
