@@ -16,10 +16,6 @@ cd /dos/drive_g/v2
 unzip /tmp/setup/ViSiON2-RES.ZIP
 rm /tmp/setup/ViSiON2-RES.ZIP
 cd /dos/drive_g/v2
-
-mkdir NODE1
-mkdir NODE2
-
 unzip TOS_MENU.ZIP -d ./MENUS
 unzip MENUDATA.ZIP -d ./MENUDATA
 
