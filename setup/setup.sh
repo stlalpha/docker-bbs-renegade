@@ -20,8 +20,8 @@ cd /dos/drive_g/v2
 mkdir NODE1
 mkdir NODE2
 
-pkunzip -d TOS_MENUS.ZIP TOS_MENUS
-pkunzip -d MENUDATA.ZIP MENUDATA
+unzip -d TOS_MENUS.ZIP TOS_MENUS
+unzip -d MENUDATA.ZIP MENUDATA
 
 
 
