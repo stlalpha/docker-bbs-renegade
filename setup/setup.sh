@@ -20,6 +20,9 @@ cd /dos/drive_g/v2
 mkdir NODE1
 mkdir NODE2
 
+pkunzip -d TOS_MENUS.ZIP TOS_MENUS
+pkunzip -d MENUDATA.ZIP MENUDATA
+
 
 
 echo 2 > /dos/numnodes   # 2 nodes by default
