@@ -16,8 +16,8 @@ cd /dos/drive_g/v2
 unzip /tmp/setup/ViSiON2-RES.ZIP
 rm /tmp/setup/ViSiON2-RES.ZIP
 cd /dos/drive_g/v2
-unzip TOS_MENU.ZIP -d ./MENUS
-unzip MENUDATA.ZIP -d ./MENUDATA
+#unzip TOS_MENU.ZIP -d ./MENUS
+#unzip MENUDATA.ZIP -d ./MENUDATA
 
 
 echo 2 > /dos/numnodes   # 2 nodes by default
