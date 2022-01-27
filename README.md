@@ -6,8 +6,8 @@ This image runs a telnettable ViSiON/2 - The Resurrection BBS server inside Dock
 
 It is based upon:
 
- - [My DOSEMU environment for Docker](https://github.com/jgoerzen/docker-dosemu)
- - [My general BBS template, jgoerzen/dos-bbs](https://github.com/jgoerzen/docker-dos-bbs) and the dos-bbs-balance
+ - [DOSEMU environment for Docker](https://github.com/jgoerzen/docker-dosemu)
+ - [general BBS template, jgoerzen/dos-bbs](https://github.com/jgoerzen/docker-dos-bbs) and the dos-bbs-balance
  
 
 This provides the full ViSiON/2 R1.0 setup in Drive G:.
@@ -35,7 +35,7 @@ Or save the following docker-compose.yml:
       - PUID=1000
       - PGID=1000
       - TZ=America/Chicago
-      - VNCPASSWORD=muhbbs
+      - VNCPASSWORD=<enter your default password here>
     ports:
       - '23:23'
       - '5901:5901'
@@ -43,7 +43,7 @@ Or save the following docker-compose.yml:
 ```
 # Accessing and general commands
 
-For details, see the [dos-bbs generic info](https://github.com/jgoerzen/docker-dos-bbs).
+For details, see the [dos-bbs generic info](https://github.com/jgoerzen/docker-dos-bbs)
 
 # Installed Files
 
@@ -56,20 +56,18 @@ See the jgoerzen/dos-bbs documentation for more.
 
 # VNC console and telnet ports
 
-The jgoerzen/dos-bbs will describe this.  Please refer to it.
+The jgoerzen/dos-bbs docs describe this.  Please refer to it.
 
 
 # More Information
 
- - [Renegade homepage](http://www.renegadebbs.info/)
- - [Renegade in Ubuntu](http://www.instructables.com/id/Renegade-BBS-in-Ubuntu-Linux-Telnet-Multi-Node/)
- - [Another Renegade site](http://www.redditmirror.cc/cache/websites/geek.phatus.com_9stap/geek.phatus.com/2009/08/renegade-bbs-in-ubuntu-linux-telnetmulti-node/index.html)
- - [Renegade Documentation](http://renegadebbs.info/docs/)
-
+ adsasd 
+ 
 # Source
 
 This is prepared by John Goerzen <jgoerzen@complete.org> and the source
 can be found at https://github.com/jgoerzen/docker-bbs-renegade
+
 
 # Copyright
 
