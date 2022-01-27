@@ -71,7 +71,7 @@ For more details, see the [dos-bbs generic info](https://github.com/jgoerzen/doc
 This image is built upon the extensive [collection in jgoerzen/dos-bbs](https://github.com/jgoerzen/docker-dos-bbs).
 Please see that page for details on DOS and the underlying configuration.
 
-Renegade itself is installed in `G:\V2`.
+ViSiON2 itself is installed in `G:\V2`.
 
 See the jgoerzen/dos-bbs documentation for more.
 
