@@ -4,10 +4,10 @@ This image runs a telnettable ViSiON/2 - The Resurrection BBS server inside Dock
 
 ![V2 Logo](https://github.com/stlalpha/vision-2-bbs/blob/main/IMAGES/welcome.png?raw=true)
 
-It is based upon:
+It is based upon these really excellent works:
 
  - [DOSEMU environment for Docker](https://github.com/jgoerzen/docker-dosemu)
- - [general BBS template, jgoerzen/dos-bbs](https://github.com/jgoerzen/docker-dos-bbs) and the dos-bbs-balance
+ - [general BBS template](https://github.com/jgoerzen/docker-dos-bbs) and the dos-bbs-balance
  
 
 This provides the full ViSiON/2 R1.0 setup in Drive G:.
