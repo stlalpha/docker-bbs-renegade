@@ -24,12 +24,11 @@ And run with:
 
 Or with docker-compose:
 
-```
----
-version: "2.1"
-services:
-  ViSiON-2:
-    image: vision2bbsres:V1.0
+  ---
+  version: "2.1"
+  services:
+   ViSiON-2:
+     image: vision2bbsres:V1.0
     container_name: v2
     environment:
       - PUID=1000
@@ -40,7 +39,6 @@ services:
       - '23:23'
       - '5901:5901'
     restart: unless-stopped
-```
 
 # Accessing and general commands
 
