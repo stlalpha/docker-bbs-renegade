@@ -12,7 +12,7 @@ It is based upon these really excellent works by [JGoerzen](https://github.com/j
 
 This provides the full ViSiON/2 R1.0 setup in Drive G:
 
-# Install and Run
+# Install and Run (docker)
 
 You can install with:
 
@@ -28,7 +28,9 @@ To get the password for the vnc console execute:
 bash$ docker logs bbs-v2 | grep password
 ```
 
-Or save the following docker-compose.yml:
+# Install and Run (docker-compose)
+
+Save the following docker-compose.yml:
 ```
 
   ---
@@ -51,11 +53,18 @@ And then...
 ```
 bash$ docker-compose up -d
 ```
-Now you can then access the console via VNC (screenshare on Mac OSX) on port 5901.
 
 # Accessing and general commands
 
-For details, see the [dos-bbs generic info](https://github.com/jgoerzen/docker-dos-bbs)
+The image runs a VNC console on port 5901/tcp.  By default, each invocation will generate a new VNC password.  To retrieve the current password, execute:
+
+```
+$ docker logs v2|grep password
+```
+
+You can set an environment var "VNCPASSWORD" to otherwise set a static value, as above in the docker-compose.yml.
+
+For more details, see the [dos-bbs generic info](https://github.com/jgoerzen/docker-dos-bbs)
 
 # Installed Files
 
