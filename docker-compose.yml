@@ -2,7 +2,7 @@
 version: "2.1"
 services:
   ViSiON-2:
-    image: vision2bbsres:v1.0
+    image: vision2bbsres:V1.0
     container_name: v2
     environment:
       - PUID=1000
