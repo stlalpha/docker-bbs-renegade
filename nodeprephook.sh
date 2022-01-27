@@ -4,7 +4,7 @@ if [ ! -e $STARTUP ]; then
   echo "cd ADF" >> $STARTUP.tmp
   echo "lh adf COM1 3F8  4 57600 8192  8192  8" >> $STARTUP.tmp
   echo "G:" >> $STARTUP.tmp
-  echo "SET DSZLOG=G:\V2\XFER" >> $STARTUP.tmp
+  echo "SET DSZLOG=G:\V2\NODE$FOUNDNODE\XFER.LOG" >> $STARTUP.tmp
   echo "SHARE.COM" >> $STARTUP.tmp
   echo "CD G:\V2\NODE$FOUNDNODE" >> $STARTUP.tmp
   echo "ViSiON.EXE /57600" >> $STARTUP.tmp
