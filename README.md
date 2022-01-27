@@ -59,7 +59,7 @@ bash$ docker-compose up -d
 The image runs a VNC console on port 5901/tcp.  By default, each invocation will generate a new VNC password.  To retrieve the current password, execute:
 
 ```
-$ docker logs v2|grep password
+$ docker logs bbs-v2|grep password
 ```
 
 You can set an environment var "VNCPASSWORD" to otherwise set a static value, as above in the docker-compose.yml.
