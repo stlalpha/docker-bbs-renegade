@@ -7,7 +7,7 @@ This image runs a telnettable ViSiON/2 - The Resurrection BBS server inside Dock
 It is based upon these really excellent works by [JGoerzen](https://github.com/jgoerzen):
 
  - [DOSEMU environment for Docker](https://github.com/jgoerzen/docker-dosemu)
- - [general BBS template](https://github.com/jgoerzen/docker-dos-bbs) and the dos-bbs-balance
+ - [general BBS template](https://github.com/jgoerzen/docker-dos-bbs) and  dos-bbs-balance
  
 
 This provides the full ViSiON/2 R1.0 setup in Drive G:
@@ -38,7 +38,7 @@ Save the following docker-compose.yml:
   services:
    ViSiON-2:
      image: vision2bbsres:V1.0
-    container_name: v2
+    container_name: bbs-v2
     environment:
       - PUID=1000
       - PGID=1000
