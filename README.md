@@ -1,26 +1,46 @@
-# Renegade BBS
+# ViSiON/2 - The Resurrection
 
-This image runs a telnettable Renegade BBS server inside Docker.
+This image runs a telnettable ViSiON/2 - The Resurrection BBS server inside Docker.
 
-![Renegade image](https://raw.githubusercontent.com/jgoerzen/docker-bbs-renegade/master/renegade-login.png)
+![V2 Logo](https://github.com/stlalpha/vision-2-bbs/blob/main/IMAGES/welcome.png?raw=true)
 
 It is based upon:
 
  - [My DOSEMU environment for Docker](https://github.com/jgoerzen/docker-dosemu)
  - [My general BBS template, jgoerzen/dos-bbs](https://github.com/jgoerzen/docker-dos-bbs) and the dos-bbs-balance
- - [The Renegade BBS](http://renegadebbs.info)
+ 
 
-This provides the full v1.20 setup in Drive G:.
+This provides the full ViSiON/2 R1.0 setup in Drive G:.
 
 # Install and Run
 
 You can install with:
 
-    docker pull jgoerzen/bbs-renegade
+    docker pull stlalpha/vision2bbsres
 
 And run with:
 
-    docker run -d -p 5901:5901 -p 23:23 --name bbs-renegade jgoerzen/bbs-renegade
+    docker run -d -p 5901:5901 -p 23:23 --name bbs-v2 stlalpha/vision2bbsres
+
+Or with docker-compose:
+
+```
+---
+version: "2.1"
+services:
+  ViSiON-2:
+    image: vision2bbsres:V1.0
+    container_name: v2
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+      - VNCPASSWORD=muhbbs
+    ports:
+      - '23:23'
+      - '5901:5901'
+    restart: unless-stopped
+```
 
 # Accessing and general commands
 
@@ -31,7 +51,7 @@ For details, see the [dos-bbs generic info](https://github.com/jgoerzen/docker-d
 This image is built upon the extensive [collection in jgoerzen/dos-bbs](https://github.com/jgoerzen/docker-dos-bbs).
 Please see that page for details on DOS and the underlying configuration.
 
-Renegade itself is installed in `G:\RG`.
+Renegade itself is installed in `G:\V2`.
 
 See the jgoerzen/dos-bbs documentation for more.
 
@@ -39,19 +59,6 @@ See the jgoerzen/dos-bbs documentation for more.
 
 The jgoerzen/dos-bbs will describe this.  Please refer to it.
 
-The node basically does this to start up a Renegade instance:
-
-    h:
-    cd ADF
-    lh adf COM1 3F8  4 115200 8192  8192  8   (load the FOSSIL driver)
-    g:
-    cd rg
-    renegade -N3 -Q -B115200   (where 3 is the node number)
-
-You can start up the DOS console with `dosconsole`.  To access the Renegade
-config system, run the above commands, except at the end, omit the `-Q -B115200`.
-
-You can connect to the local BBS with ATDTlocalhost.
 
 # More Information
 
