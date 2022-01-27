@@ -22,7 +22,8 @@ And run with:
 
     docker run -d -p 5901:5901 -p 23:23 --name bbs-v2 stlalpha/vision2bbsres
 
-Or with docker-compose:
+Or save the following docker-compose.yml:
+```
 
   ---
   version: "2.1"
@@ -39,7 +40,7 @@ Or with docker-compose:
       - '23:23'
       - '5901:5901'
     restart: unless-stopped
-
+```
 # Accessing and general commands
 
 For details, see the [dos-bbs generic info](https://github.com/jgoerzen/docker-dos-bbs).
