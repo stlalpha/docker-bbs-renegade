@@ -10,7 +10,7 @@ It is based upon these really excellent works by [JGoerzen](https://github.com/j
  - [general BBS template](https://github.com/jgoerzen/docker-dos-bbs) and the dos-bbs-balance
  
 
-This provides the full ViSiON/2 R1.0 setup in Drive G:.
+This provides the full ViSiON/2 R1.0 setup in Drive G:
 
 # Install and Run
 
@@ -21,6 +21,12 @@ You can install with:
 And run with:
 
     docker run -d -p 5901:5901 -p 23:23 --name bbs-v2 stlalpha/vision2bbsres
+
+To get the password for the vnc console execute:
+
+```
+bash$ docker logs bbs-v2 | grep password
+```
 
 Or save the following docker-compose.yml:
 ```
@@ -35,12 +41,18 @@ Or save the following docker-compose.yml:
       - PUID=1000
       - PGID=1000
       - TZ=America/Chicago
-      - VNCPASSWORD=<enter your default password here>
+      - VNCPASSWORD=muhbbspassword
     ports:
       - '23:23'
       - '5901:5901'
     restart: unless-stopped
 ```
+And then...
+```
+bash$ docker-compose up -d
+```
+Now you can then access the console via VNC (screenshare on Mac OSX) on port 5901.
+
 # Accessing and general commands
 
 For details, see the [dos-bbs generic info](https://github.com/jgoerzen/docker-dos-bbs)
