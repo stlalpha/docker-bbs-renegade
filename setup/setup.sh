@@ -20,7 +20,6 @@ unzip TOS_MENU.ZIP -d ./MENUS
 unzip MENUDATA.ZIP -d ./MENUDATA
 
 
-
 echo 2 > /dos/numnodes   # 2 nodes by default
 
 
