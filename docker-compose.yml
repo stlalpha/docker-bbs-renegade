@@ -9,7 +9,7 @@ services:
       - PGID=1000
       - TZ=America/Chicago
     volumes:
-      - drive_g:/dos/drive_g
+      - ./drive_g:/dos/drive_g
     ports:
       - '23:23'
       - '5901:5901'
