@@ -7,9 +7,9 @@ set -x
 cd /tmp/setup
 
 mkdir /dos/drive_g/v2
-wget -O ViSiON2-RES.ZIP https://github.com/stlalpha/docker-bbs-renegade/blob/master/binaries/what.zip?raw=true
+wget -O ViSiON2-RES.ZIP https://github.com/stlalpha/docker-bbs-vision2/blob/master/binaries/V2R-0123.ZIP?raw=true
 
-#sha256sum -c < sums
+sha256sum -c < sums
 
 cd /dos/drive_g
 
