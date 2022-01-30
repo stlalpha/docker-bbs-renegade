@@ -2,12 +2,13 @@
 version: "2.1"
 services:
   ViSiON-2:
-    image: vision2bbsres:V1.0
+    image: stlalpha/vision2bbsres:V1.0
     container_name: bbs-v2
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=America/Chicago
+      - VNCPASSWORD=muhbbs
     ports:
       - '23:23'
       - '5901:5901'
