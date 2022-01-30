@@ -10,7 +10,7 @@ It is based upon these really excellent works by [JGoerzen](https://github.com/j
  - [general BBS template](https://github.com/jgoerzen/docker-dos-bbs) and  dos-bbs-balance
  
 
-This provides the full ViSiON/2 R1.0 setup in Drive G:
+This provides the full 2-node ViSiON/2 R1.0 setup in Drive G:
 
 # Install and Run (docker)
 
@@ -22,11 +22,6 @@ And run with:
 
     docker run -d -p 5901:5901 -p 23:23 --name bbs-v2 stlalpha/vision2bbsres
 
-To get the password for the vnc console execute:
-
-```
-bash$ docker logs bbs-v2 | grep password
-```
 
 # Install and Run (docker-compose)
 
@@ -37,7 +32,7 @@ Save the following docker-compose.yml:
   version: "2.1"
   services:
    ViSiON-2:
-     image: vision2bbsres:V1.0
+     image: vision2bbsres
     container_name: bbs-v2
     environment:
       - PUID=1000
@@ -56,13 +51,22 @@ bash$ docker-compose up -d
 
 # Accessing and general commands
 
-The image runs a VNC console on port 5901/tcp.  By default, each invocation will generate a new VNC password.  To retrieve the current password, execute:
+The image runs a VNC console on port 5901/tcp.  You can connect to this console with any VNC client, on the mac you can use "Screen Sharing" and point it at hostname:5901. 
+
+By default, each invocation will generate a new VNC password.  To retrieve the current password, execute:
 
 ```
 $ docker logs bbs-v2|grep password
 ```
 
-You can set an environment var "VNCPASSWORD" to otherwise set a static value, as above in the docker-compose.yml.
+You can set an environment variable "VNCPASSWORD" to otherwise set a static value, as above in the docker-compose.yml.
+
+```
+bash% export VNCPASSWORD=mypassword
+bash% docker run -d -p 5901:5901 -p 23:23 --name bbs-v2 stlalpha/vision2bbsres
+```
+
+Upon connecting to the 
 
 For more details, see the [dos-bbs generic info](https://github.com/jgoerzen/docker-dos-bbs)
 
@@ -76,6 +80,8 @@ ViSiON2 itself is installed in `G:\V2`.
 See the jgoerzen/dos-bbs documentation for more.
 
 # VNC console and telnet ports
+
+Using a capable terminal package (I recommend [netrunner](http://mysticbbs.com/downloads.html) or [syncterm](https://syncterm.bbsdev.net)) - connect to your host on port 23.  You should
 
 The jgoerzen/dos-bbs docs describe this.  Please refer to it.
 
