@@ -66,11 +66,9 @@ bash% export VNCPASSWORD=mypassword
 bashg% docker run -d -p 5901:5901 -p 23:23 --name bbs-v2 stlalpha/vision2bbsres
 ```
 
-Upon connecting to the vnc server, youd will get dumped to an xterm.  
+After you enter the VNC password, upon connecting to the vnc server, youd will get dumped to an xterm.  
 
-![V2 Logo](https://raw.githubusercontent.com/stlalpha/docker-bbs-vision2/master/setup/vnc-console.png)
-
-
+![Xconsole](https://github.com/stlalpha/docker-bbs-vision2/blob/master/images/vnc-console.png?raw=true)
 
 
 To get to the dos instance, execute:
