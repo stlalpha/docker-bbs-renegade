@@ -1,6 +1,6 @@
 FROM jgoerzen/dos-bbs
 
-LABEL MAINTAINER="stlalpha@icloud.net"
+LABEL MAINTAINER="stlalpha@vision2bbs.com"
 COPY setup/ /tmp/setup/
 RUN /tmp/setup/setup.sh && rm -r /tmp/setup
 COPY nodeprephook.sh /dos/nodeprephook.sh
