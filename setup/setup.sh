@@ -7,7 +7,7 @@ set -x
 cd /tmp/setup
 
 mkdir /dos/drive_g/v2r 
-wget -O V2RES.ZIP https://github.com/stlalpha/docker-bbs-renegade/blob/master/binaries/V2R0043D.ZIP?raw=true
+wget -O V2RES.ZIP https://github.com/stlalpha/docker-bbs-renegade/blob/master/binaries/V2R0044D.ZIP?raw=true
 
 sha256sum -c < sums
 mv V2RES.ZIP /dos/drive_g/v2r && cd /dos/drive_g/v2r
