@@ -66,7 +66,10 @@ bash% export VNCPASSWORD=mypassword
 bashg% docker run -d -p 5901:5901 -p 23:23 --name bbs-v2 stlalpha/vision2bbsres
 ```
 
-Upon connecting to the 
+Upon connecting to the vnc server, youd will get dumped to an xterm.  To get to the dos instance, execute:
+
+```
+
 
 For more details, see the [dos-bbs generic info](https://github.com/jgoerzen/docker-dos-bbs)
 
@@ -83,17 +86,14 @@ See the jgoerzen/dos-bbs documentation for more.
 
 Using a capable terminal package (I recommend [netrunner](http://mysticbbs.com/downloads.html) or [syncterm](https://syncterm.bbsdev.net)) - connect to your host on port 23.  You should
 
-The jgoerzen/dos-bbs docs describe this.  Please refer to it.
+The jgoerzen/dos-bbs docs describe all of the underlying mechanisms in detail.  Please refer to it if you are looking to understand how it all functions.
 
 
-# More Information
-
- adsasd 
  
 # Source
 
-This is prepared by John Goerzen <jgoerzen@complete.org> and the source
-can be found at https://github.com/jgoerzen/docker-bbs-renegade
+This is prepared by stlalpha <stlalpha@vision2bbs.com> and the source
+can be found at https://github.com/stlalpha/docker-bbs-vision2
 
 
 # Copyright
