@@ -7,7 +7,7 @@ set -x
 cd /tmp/setup
 
 mkdir /dos/drive_g/v2
-wget -O ViSiON2-RES.ZIP https://github.com/stlalpha/docker-bbs-renegade/blob/master/binaries/V2R0123.ZIP?raw=true
+wget -O ViSiON2-RES.ZIP https://github.com/stlalpha/docker-bbs-renegade/blob/master/binaries/V2R004.ZIP?raw=true
 
 sha256sum -c < sums
 
@@ -20,5 +20,5 @@ rm /tmp/setup/ViSiON2-RES.ZIP
 #unzip MENUDATA.ZIP -d ./MENUDATA
 
 
-echo 2 > /dos/numnodes   # 2 nodes by default
+echo 1 > /dos/numnodes   # 2 nodes by default
 
