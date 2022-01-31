@@ -2,7 +2,7 @@
 
 This image runs a telnettable ViSiON/2 - The Resurrection BBS server inside Docker.
 
-![V2 Logo](https://raw.githubusercontent.com/stlalpha/docker-bbs-vision2/master/setup/v2logo.png)
+![V2 Logo](https://raw.githubusercontent.com/stlalpha/docker-bbs-vision2/master/setup/v2logo.png?raw=true)
 
 It is based upon these really excellent works by [JGoerzen](https://github.com/jgoerzen):
 
