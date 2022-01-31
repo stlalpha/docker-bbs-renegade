@@ -79,6 +79,53 @@ root@eb1e5b696efe:/# dosconsole <enter>
 
 This will launch the dos-emulator console and you should see the following screen:
 
+![dosconsole](https://github.com/stlalpha/docker-bbs-vision2/blob/master/images/dosconsole.png?raw=true)
+
+Now you can configure your V2 instance....Change to drive "G" and go into the v2r directory, and run config:
+
+```
+C:\> G:
+G:\> cd V2R <enter>
+G:\V2R\> config <enter>
+```
+![v2 config](https://github.com/stlalpha/docker-bbs-vision2/blob/master/images/config.png?raw=true)
+
+When you are done there hit ESCape until you are back to the prompt. You don't need to do anything to make it work, it comes preconfigured - but its fun to look around.  ***NOTE: The software generally saves on enter - without confirmation.***
+
+Want to customize your text strings?  Run strings.exe in the same directory.
+
+![v2 strings](https://github.com/stlalpha/docker-bbs-vision2/blob/master/images/strings.png?raw=true)
+
+Hit F-10 to save and exit, F-1 to edit an entry as-is or "Enter" on an entry to start with a blank line.
+
+Want to fire up the local bbs console?  You just need to set DSZLOG and run vision /L in the same directory:
+
+```
+C:\V2R\> SET DSZLOG=G:\V2R\XFER <enter>
+C:\V2R\> VISION /L <enter>
+```
+This will start the Waiting For Caller (WFC) screen - and you should see the following:
+
+![v2 wfc](https://github.com/stlalpha/docker-bbs-vision2/blob/master/images/WFC.png?raw=true)
+
+This screen is what would run local to the computer, as you waited for a called to dial your phone number and connect.
+
+To log on locally, hit F1 at the WFC screen and you will be greeted with the sysop menu:
+
+![v2 local logon](https://github.com/stlalpha/docker-bbs-vision2/blob/master/images/SYSOPLOGON.png?raw=true)
+
+You can use the arrow keys to navigate up and down.  Hit "Enter" on "Login to BBS" - arrow to "No" and hit "Enter" when asked if you want to go off-hook and you will be greeted with the matrix logon screen:
+
+![v2 matrix logon](https://github.com/stlalpha/docker-bbs-vision2/blob/master/images/matrixlogon.png?raw=true)
+
+Hit "Enter" on "journey onward", sit through some ansis and you will get to the login box:
+
+![v2 matrix logon](https://github.com/stlalpha/docker-bbs-vision2/blob/master/images/loginscreen.png?raw=true)
+
+Enter "1" as your username and "password" for your password - and then you will be in.
+
+![v2 user stats](https://github.com/stlalpha/docker-bbs-vision2/blob/master/images/userstat.png?raw=true)
+
 
 For more details, see the [dos-bbs generic info](https://github.com/jgoerzen/docker-dos-bbs)
 
