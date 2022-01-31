@@ -140,7 +140,7 @@ See the jgoerzen/dos-bbs documentation for more.
 
 # VNC console and telnet ports
 
-Using a capable terminal package (I recommend [netrunner](http://mysticbbs.com/downloads.html) or [syncterm](https://syncterm.bbsdev.net)) - connect to your host on port 23.  You should
+Using a capable terminal package (I recommend [netrunner](http://mysticbbs.com/downloads.html) or [syncterm](https://syncterm.bbsdev.net)) - connect to your host on port 23. 
 
 The jgoerzen/dos-bbs docs describe all of the underlying mechanisms in detail.  Please refer to it if you are looking to understand how it all functions.
 
