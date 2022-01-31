@@ -10,7 +10,7 @@ It is based upon these really excellent works by [JGoerzen](https://github.com/j
  - [general BBS template](https://github.com/jgoerzen/docker-dos-bbs) and  dos-bbs-balance
  
 
-This provides the full 2-node ViSiON/2 R1.0 setup in Drive G:
+This provides the full ViSiON/2 R1.0 setup in Drive G:
 
 # Install and Run (docker)
 
@@ -63,7 +63,7 @@ You can set an environment variable "VNCPASSWORD" to otherwise set a static valu
 
 ```
 bash% export VNCPASSWORD=mypassword
-bash% docker run -d -p 5901:5901 -p 23:23 --name bbs-v2 stlalpha/vision2bbsres
+bashg% docker run -d -p 5901:5901 -p 23:23 --name bbs-v2 stlalpha/vision2bbsres
 ```
 
 Upon connecting to the 
