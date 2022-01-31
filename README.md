@@ -2,7 +2,7 @@
 
 This image runs a telnettable ViSiON/2 - The Resurrection BBS server inside Docker.
 
-![V2 Logo](https://github.com/stlalpha/vision-2-bbs/blob/main/IMAGES/welcome.png?raw=true)
+![V2 Logo](https://github.com/stlalpha/docker-bbs-vision2/blob/main/images/v2logo.png?raw=true)
 
 It is based upon these really excellent works by [JGoerzen](https://github.com/jgoerzen):
 
@@ -66,9 +66,18 @@ bash% export VNCPASSWORD=mypassword
 bashg% docker run -d -p 5901:5901 -p 23:23 --name bbs-v2 stlalpha/vision2bbsres
 ```
 
-Upon connecting to the vnc server, youd will get dumped to an xterm.  To get to the dos instance, execute:
+Upon connecting to the vnc server, youd will get dumped to an xterm.  
+
+
+
+
+To get to the dos instance, execute:
 
 ```
+root@eb1e5b696efe:/# dosconsole <enter>
+```
+
+This will launch the dos-emulator console and you should see the following screen:
 
 
 For more details, see the [dos-bbs generic info](https://github.com/jgoerzen/docker-dos-bbs)
